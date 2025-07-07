@@ -1,0 +1,14 @@
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\bin\Debug\net8.0\ControleEstoqueConsole.exe
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\bin\Debug\net8.0\ControleEstoqueConsole.deps.json
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\bin\Debug\net8.0\ControleEstoqueConsole.runtimeconfig.json
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\bin\Debug\net8.0\ControleEstoqueConsole.dll
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\bin\Debug\net8.0\ControleEstoqueConsole.pdb
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.AssemblyInfoInputs.cache
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.AssemblyInfo.cs
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.csproj.CoreCompileInputs.cache
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.dll
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\refint\ControleEstoqueConsole.dll
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.pdb
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.genruntimeconfig.cache
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ref\ControleEstoqueConsole.dll
