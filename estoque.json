@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Garrafa Térmica",
+    "Quantidade": 10,
+    "Preco": 79.9
+  },
+  {
+    "Id": 2,
+    "Nome": "Copo de Vidro",
+    "Quantidade": 20,
+    "Preco": 15.5
+  },
+  {
+    "Id": 3,
+    "Nome": "Prato Fundo",
+    "Quantidade": 15,
+    "Preco": 25.0
+  },
+  {
+    "Id": 4,
+    "Nome": "Panela de Pressão",
+    "Quantidade": 5,
+    "Preco": 199.99
+  },
+  {
+    "Id": 5,
+    "Nome": "Garrafa Plástica",
+    "Quantidade": 12,
+    "Preco": 18.75
+  },
+  {
+    "Id": 6,
+    "Nome": "Talher de Inox",
+    "Quantidade": 50,
+    "Preco": 3.9
+  },
+  {
+    "Id": 7,
+    "Nome": "Prato Raso",
+    "Quantidade": 18,
+    "Preco": 22.9
+  }
+]

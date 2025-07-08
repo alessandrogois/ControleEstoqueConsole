@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using ControleEstoqueConsole.Data;
 using ControleEstoqueConsole.Models;
 
 namespace ControleEstoqueConsole.Services;
@@ -6,7 +7,13 @@ namespace ControleEstoqueConsole.Services;
 public class EstoqueService
 {
   private List<Produto> _produtos = new();
-  private int _proximoId = 1;
+  private int _proximoId;
+
+  public EstoqueService()
+  {
+    _produtos = BancoDeDados.Carregar();
+    _proximoId = (_produtos.Count == 0) ? 1 : _produtos.Max(p => p.Id) + 1;
+  }
 
   public void AdicionarProduto(string nome, int qunatidade, decimal preco)
   {
@@ -19,6 +26,7 @@ public class EstoqueService
     };
 
     _produtos.Add(produto);
+    BancoDeDados.Salvar(_produtos);
     Console.WriteLine("Produto adicionado com sucesso!");
   }
 
@@ -35,7 +43,7 @@ public class EstoqueService
       Console.WriteLine(p);
     }
   }
-  public void AtualizarQuantidade(int id, int NovaQuantidade)
+  public void AtualizarQuantidade(int id, int novaQuantidade)
   {
     var produto = _produtos.FirstOrDefault(p => p.Id == id);
     if (produto == null)
@@ -44,8 +52,9 @@ public class EstoqueService
       return;
     }
 
-    _produtos.Remove(produto);
-    Console.WriteLine("Produto removido.");
+    produto.Quantidade = novaQuantidade;
+    BancoDeDados.Salvar(_produtos);
+    Console.WriteLine("Qunatidade atualizada!");
 
   }
 
@@ -59,6 +68,24 @@ public class EstoqueService
     }
 
     _produtos.Remove(produto);
+    BancoDeDados.Salvar(_produtos);
     Console.WriteLine("Produto removido.");
+  }
+
+  public void BuscarPorNome(string termo)
+  {
+    var encontrados = _produtos
+    .Where(p => p.Nome.ToLower().Contains(termo.ToLower()))
+    .ToList();
+
+    if (encontrados.Count == 0)
+    {
+      Console.WriteLine("Nenhum produto encontrado com esse nome.");
+    }
+    foreach (var p in encontrados)
+    {
+      Console.WriteLine(p);
+    }
+
   }
 }

@@ -9,6 +9,7 @@ while (true)
   Console.WriteLine("2. Listar Produtos");
   Console.WriteLine("3. Atualizar Quantidade");
   Console.WriteLine("4. Remover Produto");
+  Console.WriteLine("5. Buscar produto por nome");
   Console.WriteLine("0. Sair");
   Console.Write("Escolha uma opção: ");
   string opcao = Console.ReadLine() ?? "";
@@ -47,6 +48,12 @@ while (true)
       int idRemover = int.Parse(Console.ReadLine() ?? "0");
 
       estoque.RemoverProduto(idRemover);
+      break;
+
+    case "5":
+      Console.Write("Digite parte do nome para buscar:  ");
+      string termoBusca = Console.ReadLine() ?? "";
+      estoque.BuscarPorNome(termoBusca);
       break;
 
     case "0":

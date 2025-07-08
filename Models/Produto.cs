@@ -11,7 +11,7 @@ public class Produto
 
   public override string ToString()
   {
-    return $"ID: {Id} | Mome {Nome} | Quantidade: {Quantidade} | Preço: R$ {Preco: F2}";
+    return $"ID: {Id} | Mome {Nome} | Quantidade: {Quantidade} | Preço: R$ {Preco:F2}";
   }
 
 }

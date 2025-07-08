@@ -12,3 +12,4 @@ C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\ne
 C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.pdb
 C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.genruntimeconfig.cache
 C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ref\ControleEstoqueConsole.dll
+C:\Users\alessandro.gois\Documents\ProjectC#\ControleEstoqueConsole\obj\Debug\net8.0\ControleEstoqueConsole.sourcelink.json
