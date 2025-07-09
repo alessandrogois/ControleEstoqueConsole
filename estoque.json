@@ -1,7 +1,7 @@
 [
   {
     "Id": 1,
-    "Nome": "Garrafa Térmica",
+    "Nome": "Garrafa T\u00E9rmica",
     "Quantidade": 10,
     "Preco": 79.9
   },
@@ -19,13 +19,13 @@
   },
   {
     "Id": 4,
-    "Nome": "Panela de Pressão",
+    "Nome": "Panela de Press\u00E3o",
     "Quantidade": 5,
     "Preco": 199.99
   },
   {
     "Id": 5,
-    "Nome": "Garrafa Plástica",
+    "Nome": "Garrafa Pl\u00E1stica",
     "Quantidade": 12,
     "Preco": 18.75
   },
@@ -40,5 +40,11 @@
     "Nome": "Prato Raso",
     "Quantidade": 18,
     "Preco": 22.9
+  },
+  {
+    "Id": 8,
+    "Nome": "2225",
+    "Quantidade": 122,
+    "Preco": 23.65
   }
 ]
