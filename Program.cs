@@ -1,4 +1,5 @@
 ﻿using ControleEstoqueConsole.Services;
+using ControleEstoqueConsole.Utils;
 
 EstoqueService estoque = new();
 
@@ -10,6 +11,7 @@ while (true)
   Console.WriteLine("3. Atualizar Quantidade");
   Console.WriteLine("4. Remover Produto");
   Console.WriteLine("5. Buscar produto por nome");
+  Console.WriteLine("6. Relatório Financeiro");
   Console.WriteLine("0. Sair");
   Console.Write("Escolha uma opção: ");
   string opcao = Console.ReadLine() ?? "";
@@ -17,14 +19,11 @@ while (true)
   switch (opcao)
   {
     case "1":
-      Console.Write("Nome do produto: ");
-      string nome = Console.ReadLine() ?? "";
+      string nome = Entrada.LerTexto("Nome do produto: ");
 
-      Console.Write("Quantidade: ");
-      int quantidade = int.Parse(Console.ReadLine() ?? "0");
+      int quantidade = Entrada.LerInt("Quantidade: ");
 
-      Console.Write("Preço: ");
-      decimal preco = decimal.Parse(Console.ReadLine() ?? "0");
+      decimal preco = Entrada.LerDecimal("Preço: ");
 
       estoque.AdicionarProduto(nome, quantidade, preco);
       break;
@@ -54,6 +53,10 @@ while (true)
       Console.Write("Digite parte do nome para buscar:  ");
       string termoBusca = Console.ReadLine() ?? "";
       estoque.BuscarPorNome(termoBusca);
+      break;
+
+    case "6":
+      estoque.GerarRelatorioFinanceiro();
       break;
 
     case "0":
