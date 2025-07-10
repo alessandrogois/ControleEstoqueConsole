@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 using ControleEstoqueConsole.Data;
 using ControleEstoqueConsole.Models;
 
@@ -86,6 +87,28 @@ public class EstoqueService
     {
       Console.WriteLine(p);
     }
-
   }
+
+  public void GerarRelatorioFinanceiro()
+  {
+    if (_produtos.Count == 0)
+    {
+      Console.WriteLine("Estoque vazio.");
+      return;
+    }
+    decimal totalGeral = 0;
+    Console.WriteLine("\n=== RELATÓRIO FINANCEIRO ===");
+
+    foreach (var p in _produtos)
+    {
+      decimal subtotal = p.Preco * p.Quantidade;
+      totalGeral += subtotal;
+
+      Console.WriteLine($"{p.Nome,-20} | {p.Quantidade,3} un x R$ {p.Preco,6:F2} = R$ {subtotal,8:F2}");
+
+    }
+    Console.WriteLine(new string('-', 55));
+    Console.WriteLine($"TOTAL GERAL: {"",27}R$ {totalGeral,8:F2}");
+  }
+
 }
