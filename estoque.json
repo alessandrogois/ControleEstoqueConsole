@@ -2,49 +2,64 @@
   {
     "Id": 1,
     "Nome": "Garrafa T\u00E9rmica",
+    "Categoria": "Cozinha",
     "Quantidade": 10,
     "Preco": 79.9
   },
   {
     "Id": 2,
     "Nome": "Copo de Vidro",
+    "Categoria": "Cozinha",
     "Quantidade": 20,
     "Preco": 15.5
   },
   {
     "Id": 3,
-    "Nome": "Prato Fundo",
-    "Quantidade": 15,
-    "Preco": 25.0
+    "Nome": "Desinfetante",
+    "Categoria": "Limpeza",
+    "Quantidade": 12,
+    "Preco": 8.75
   },
   {
     "Id": 4,
-    "Nome": "Panela de Press\u00E3o",
+    "Nome": "Papel A4",
+    "Categoria": "Escrit\u00F3rio",
     "Quantidade": 5,
-    "Preco": 199.99
+    "Preco": 32.9
   },
   {
     "Id": 5,
-    "Nome": "Garrafa Pl\u00E1stica",
-    "Quantidade": 12,
-    "Preco": 18.75
-  },
-  {
-    "Id": 6,
-    "Nome": "Talher de Inox",
-    "Quantidade": 50,
-    "Preco": 3.9
-  },
-  {
-    "Id": 7,
     "Nome": "Prato Raso",
+    "Categoria": "Cozinha",
     "Quantidade": 18,
     "Preco": 22.9
   },
   {
+    "Id": 6,
+    "Nome": "\u00C1lcool 70%",
+    "Categoria": "Limpeza",
+    "Quantidade": 30,
+    "Preco": 5.5
+  },
+  {
+    "Id": 7,
+    "Nome": "Caneta Azul",
+    "Categoria": "Escrit\u00F3rio",
+    "Quantidade": 50,
+    "Preco": 2.3
+  },
+  {
     "Id": 8,
-    "Nome": "2225",
-    "Quantidade": 122,
-    "Preco": 23.65
+    "Nome": "Toner Preto",
+    "Categoria": "Escrit\u00F3rio",
+    "Quantidade": 5,
+    "Preco": 26.99
+  },
+  {
+    "Id": 9,
+    "Nome": "Caneta Piloto Preta",
+    "Categoria": "Escrit\u00F3rio",
+    "Quantidade": 20,
+    "Preco": 2.99
   }
 ]

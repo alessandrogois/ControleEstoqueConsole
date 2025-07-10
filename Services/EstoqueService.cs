@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
 using ControleEstoqueConsole.Data;
 using ControleEstoqueConsole.Models;
+using ControleEstoqueConsole.Utils;
 
 namespace ControleEstoqueConsole.Services;
 
@@ -16,19 +17,22 @@ public class EstoqueService
     _proximoId = (_produtos.Count == 0) ? 1 : _produtos.Max(p => p.Id) + 1;
   }
 
-  public void AdicionarProduto(string nome, int qunatidade, decimal preco)
+  public void AdicionarProduto(string nome, string categoria, int qunatidade, decimal preco)
   {
     var produto = new Produto
     {
       Id = _proximoId++,
       Nome = nome,
+      Categoria = categoria,
       Quantidade = qunatidade,
       Preco = preco
     };
 
     _produtos.Add(produto);
     BancoDeDados.Salvar(_produtos);
+    Logger.Registrar($"Produto '{produto.Nome}' adicionado (ID{produto.Id})");
     Console.WriteLine("Produto adicionado com sucesso!");
+
   }
 
   public void ListarProdutos()
@@ -55,6 +59,7 @@ public class EstoqueService
 
     produto.Quantidade = novaQuantidade;
     BancoDeDados.Salvar(_produtos);
+    Logger.Registrar($"Quantidade do produto '{produto.Nome}' (ID {produto.Id}) atualizada para {novaQuantidade}");
     Console.WriteLine("Qunatidade atualizada!");
 
   }
@@ -70,6 +75,7 @@ public class EstoqueService
 
     _produtos.Remove(produto);
     BancoDeDados.Salvar(_produtos);
+    Logger.Registrar($"Produto '{produto.Nome}' removido (ID{produto.Id})");
     Console.WriteLine("Produto removido.");
   }
 
@@ -109,6 +115,11 @@ public class EstoqueService
     }
     Console.WriteLine(new string('-', 55));
     Console.WriteLine($"TOTAL GERAL: {"",27}R$ {totalGeral,8:F2}");
+    Logger.Registrar("Relatório financeiro gerado");
+
+
   }
+
+
 
 }

@@ -23,9 +23,11 @@ while (true)
 
       int quantidade = Entrada.LerInt("Quantidade: ");
 
+      string categoria = Entrada.LerTexto("Categoria: ");
+
       decimal preco = Entrada.LerDecimal("Preço: ");
 
-      estoque.AdicionarProduto(nome, quantidade, preco);
+      estoque.AdicionarProduto(nome, categoria, quantidade, preco);
       break;
 
     case "2":

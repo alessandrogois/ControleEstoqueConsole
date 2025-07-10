@@ -1,0 +1,4 @@
+[2025-07-10 15:03:40]Relatório financeiro gerado;
+[2025-07-10 15:04:25]Quantidade do produto 'Copo de Vidro' (ID 2) atualizada para 55;
+[2025-07-10 15:11:42]Produto 'Toner Preto' adicionado (ID8);
+[2025-07-10 15:15:57]Produto 'Caneta Piloto Preta' adicionado (ID9);
